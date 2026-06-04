@@ -1,0 +1,51 @@
+searches:
+  - position: "bookkeeper"
+    location: "United States"
+    radius: 25
+    max_pages: 2
+  - position: "office manager"
+    location: "United States"
+    radius: 25
+    max_pages: 2
+  - position: "junior accountant"
+    location: "United States"
+    radius: 25
+    max_pages: 2
+
+request:
+  delay_seconds: 3
+  timeout_seconds: 25
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125 Safari/537.36"
+
+output:
+  directory: "output"
+
+icp_profiles:
+  - name: "Profit Crew"
+    include_keywords:
+      - "bookkeeper"
+      - "office manager"
+      - "junior accountant"
+      - "accounting"
+      - "accounts payable"
+      - "accounts receivable"
+      - "payroll"
+      - "quickbooks"
+      - "back office"
+    exclude_keywords:
+      - "intern"
+      - "unpaid"
+  - name: "Walden"
+    include_keywords:
+      - "bookkeeper"
+      - "office manager"
+      - "junior accountant"
+      - "accounting"
+      - "accounts payable"
+      - "accounts receivable"
+      - "payroll"
+      - "quickbooks"
+      - "back office"
+    exclude_keywords:
+      - "intern"
+      - "unpaid"
